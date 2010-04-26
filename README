@@ -1,0 +1,8 @@
+#!/bin/english
+
+Some of my PlayOnLinux scripts.
+
+Included:
+	roblox.pol	www.roblox.com
+
+To install them: clone my git repo; open PlayOnLinux; go to 'Tools'; click 'Run a non-official script'; and browse for the .pol files
