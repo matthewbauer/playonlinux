@@ -1,0 +1,57 @@
+#!/bin/english
+# Matthew Bauer
+#
+# This work is licensed under the Creative Commons Attribution 3.0 United States License.
+# To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/us/
+
+==================
+= Hacking Roblox =
+==================
+
+This documents Roblox URLs and Executable hacking.
+
+URLs:
+
+http://www.roblox.com/Game/PlaceLauncher.asmx
+
+	The header must define Content-Type to be text/xml; charset=utf-8
+	You can use the POST command to send XML data like this:
+		<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><RequestGame xmlns="http://roblox.com/"><placeId jobId="$jobId">$placeId</placeId></RequestGame></soap:Body></soap:Envelope>
+
+	List of xml elements in roblox namespace: 
+		POST:
+			placeId
+				may contain the tag jobId that sets the game you want to join at that place
+
+		GET:
+			joinScriptUrl
+				may use like: Roblox.exe -play joinScriptUrl
+			jobId
+				always http://www.roblox.com/Login/Negotiate.ashx
+			status
+				Waiting or Joining
+			authenticationUrl
+			authenticationTicket
+
+	For example:
+		$ curl -s -b ~/.PlayOnLinux/wineprefix/Roblox/cookies -H 'Content-Type: text/xml; charset=utf-8' -d '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><RequestGame xmlns="http://roblox.com/"><placeId jobId="46e84963-9939-48b4-815a-ceee2fc3c534">5418826</placeId></RequestGame></soap:Body></soap:Envelope>' 'http://www.roblox.com/Game/PlaceLauncher.asmx'
+
+https://www.roblox.com/login/dologin.aspx
+	The login page can be used as a simple POST.
+	Just send username=builderman&password=password as the data in the request.
+	For example:
+		$ curl -s -c /tmp/roblox -d username="$1" -d password="$2" "https://www.roblox.com/login/dologin.aspx"
+
+Executables:
+
+List of option for Roblox.exe and RobloxApp.exe
+	Roblox.exe
+		-q
+		-play joinScriptUrl
+		-uninstall
+		-alluser
+		-ide
+		-browser
+
+	RobloxApp.exe
+		-browser
