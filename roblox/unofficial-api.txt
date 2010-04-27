@@ -21,7 +21,6 @@ http://www.roblox.com/Game/PlaceLauncher.asmx
 	List of xml elements in roblox namespace: 
 		POST:
 			placeId
-				may contain the tag jobId that sets the game you want to join at that place
 
 		GET:
 			joinScriptUrl
@@ -39,6 +38,8 @@ http://www.roblox.com/Game/PlaceLauncher.asmx
 https://www.roblox.com/login/dologin.aspx
 	The login page can be used as a simple POST.
 	Just send username=builderman&password=password as the data in the request.
+	Remember to save the cookies
+
 	For example:
 		$ curl -s -c /tmp/roblox -d username="$1" -d password="$2" "https://www.roblox.com/login/dologin.aspx"
 
