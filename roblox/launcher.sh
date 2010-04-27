@@ -47,5 +47,6 @@ fi
 export WINEPREFIX="$REPERTOIRE/wineprefix/Roblox"
 export WINEDEBUG="-all"
 cd $WINEPREFIX/drive_c/Program\ Files/RobloxVersions/*
-echo $joinScriptUrl
+
+# I know the echo is ugly, but I'm pretty sure it's required
 wine Roblox.exe -play $(echo "$joinScriptUrl")

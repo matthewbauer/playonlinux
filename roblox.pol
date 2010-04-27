@@ -80,12 +80,13 @@ POL_SetupWindow_pulse "100"
 cp $REPERTOIRE/wineprefix/$appname/drive_c/windows/system32.\
 {mscoree,ddraw,shfolder,mlang,rsaehn,imagehlp,wined3d,localspl,spoolss,uxtheme,imm32,pdh,comdlg32,WINHTTP,winspool,OPENGL32}.dll winex11.drv "$REPERTOIRE/wineprefix/$appname/drive_c/Program Files/${appname}Versions/version-$appversion"
 
-POL_SetupWindow_download "GlobalSettings_4.xml (patched version of settings)" "GlobalSettings_4.xml" "http://pastebin.com/download.php?i=KkUzGMUB"
+POL_SetupWindow_download "GlobalSettings_4.xml (patched version of settings)" "GlobalSettings_4.xml" "http://github.com/paradoq/playonlinux/raw/master/roblox/GlobalSettings_4.xml"
 
 POL_SetupWindow_pulsebar "Changing Roblox settings for users..." "Changing..."
 for robloxdir in $REPERTOIRE/wineprefix/$appname/drive_c/users/*
 do
-	cp "download.php" "$robloxdir/Local Settings/Application Data/Roblox/GlobalSettings_4.xml"
+	# we could add a patched IDESettings2.xml
+	cp "GlobalSettings_4.xml" "$robloxdir/Local Settings/Application Data/Roblox"
 done
 POL_SetupWindow_pulse "100"
 
@@ -110,8 +111,7 @@ POL_SetupWindow_pulse "100"
 #POL_SetupWindow_make_shortcut "$appname" "Program Files/${appname}Versions/version-$appversion" "$setup" "" "$appname" "" ""
 #-play "$joinScriptUrl"
 
-wget -O $REPERTOIRE/configurations/installed/Roblox 'http://pastebin.com/download.php?i=vNkQnytY'
-sed -i 's/\r//g' $REPERTOIRE/configurations/installed/Roblox
+wget -O $REPERTOIRE/configurations/installed/Roblox 'http://github.com/paradoq/playonlinux/raw/master/roblox/launcher.sh'
 chmod +x $REPERTOIRE/configurations/installed/Roblox
 
 POL_SetupWindow_Close
