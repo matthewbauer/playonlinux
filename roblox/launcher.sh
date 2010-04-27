@@ -1,4 +1,6 @@
 #!/bin/bash
+# Matthew Bauer
+# GPL2 license (2010)
 
 if [ -z "$REPERTOIRE" ]
 then

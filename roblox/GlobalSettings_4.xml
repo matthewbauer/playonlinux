@@ -1,198 +1,145 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>Pastebin.com - #1 paste tool since 2002</title>
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link href="/i/style.css?19" rel="stylesheet" type="text/css" />
-		<meta name="google-site-verification" content="jkUAIOE8owUXu8UXIhRLB9oHJsWBfOgJbZzncqHoF4A" />
-				<script type="text/javascript" src="/i/basic.js?7"></script>
-		<!--[if lte IE 6]>
-			<link href="/i/ie6.css" media="screen" rel="Stylesheet" type="text/css" />
-		<![endif]-->
-	</head>
-	<body>
-
-<!--[if lte IE 6]>
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-            <td>
-<![endif]-->
-		<div id="container">
-			<div id="header">
-				<div id="header_logo" title="Make New Paste!" onclick="location.href='/index'"></div>
-				<div id="header_frame">
-					<div id="hf1"><a href="/">pastebin.com</a></div>
-					<div id="hf2">#1 paste tool since 2002</div>
-				</div>				
-				<div id="header_menu">
-					<ul id="nav">
-						<li class="active"><a href="/">new</a></li>
-						<li><a href="/archive/1">archive</a></li>
-						<li><a href="/help">help</a></li>
-						<li><a href="/api.php">API</a></li>
-					</ul>
-				</div>
-				<div id="header_firefox" title="Get Our Firefox Add-on" onclick="location.href='/tools_firefox.php'"></div>
-				<div id="header_chrome" title="Get Our Chrome Extension" onclick="location.href='/tools_chrome.php'"></div>
-				<div id="header_twitter" title="Follow Us At Twitter" onclick="location.href='http://www.twitter.com/pastebincom'"></div>
-				<div id="header_search">
-					<form class="search_form" name="search_form" method="get" action="/search" id="cse-search-box">
-					    <input type="hidden" name="cx" value="013305635491195529773:t-lahnuezfu" />
-						<input type="hidden" name="cof" value="FORID:10" />
-						<input type="hidden" name="ie" value="UTF-8" />
-						<input class="search_input" type="text" name="q" size="5" value="search..." onfocus="this.value=''" /><input class="search_button" src="/i/dot.gif" alt="Search..." type="image" value="Search" name="sa" />
-					</form>
-				</div>
-			</div>
-			<div id="content_frame">
-				<div id="content_left">
-				
-		<div class="content_left_title">Recent Posts</div>
-		<div class="content_left_box">
-
-			<div class="clb_top"><a href="http://pastebin.com/Px6JbMvR">Anonymous</a></div>
-			<div class="clb_bottom"><span>None</span> | 3 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://hashphp.pastebin.com/1WqkY6JN">coeds need cash</a></div>
-			<div class="clb_bottom"><span>None</span> | 11 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://pastebin.com/Kb8ikhsB">coeds need cash</a></div>
-			<div class="clb_bottom"><span>Java</span> | 19 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://pastebin.com/aLMUFU8w">Anonymous</a></div>
-			<div class="clb_bottom"><span>None</span> | 22 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://pastebin.com/nTTrkpd8">BluntMaster</a></div>
-			<div class="clb_bottom"><span>None</span> | 25 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://pastebin.com/yPdZJKXy">Anonymous</a></div>
-			<div class="clb_bottom"><span>None</span> | 34 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://sydney.pastebin.com/MFQcQ8HE">video watching material bus</a></div>
-			<div class="clb_bottom"><span>None</span> | 35 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://teamsparkle.pastebin.com/fehV79af">Eóin</a></div>
-			<div class="clb_bottom"><span>Java</span> | 38 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://pastebin.com/02FshJVE">Anonymous</a></div>
-			<div class="clb_bottom"><span>None</span> | 53 sec ago</div>		
-		
-			<div class="clb_top"><a href="http://pastebin.com/bFVhvmha">Anonymous</a></div>
-			<div class="clb_bottom"><span>None</span> | 58 sec ago</div>		
-				</div>
-
-		<div class="content_left_title">Sitereport</div>
-		<div class="content_left_box">
-			Find cool info about any domain on the internet?<br /><a href="http://www.sitereport.org" class="arrow" target="_blank"><b>visit sitereport</b></a>
-		</div>		
-
-
-		<div class="content_left_title">Free Subdomains</div>
-		<div class="content_left_box">
-			Want a pastebin.com sub-domain for your community?<br /><a href="/private_pastebin.php" class="arrow">learn more...</a>
-		</div>
-
-		<div class="content_left_title">What is pastebin?</div>
-		<div class="content_left_box">
-			Pastebin is a website that hosts all your text &amp; code on dedicated servers for easy sharing.<br /><a href="/help" class="arrow">learn more...</a>
-		</div>
-		<div class="change_color" onclick="location.href='/change.php'"></div>
-		<div><script type="text/javascript" src="http://www.sitereport.org/js/whoisonline.js"></script><script type="text/javascript">whoisonline_1('iy13HYeT')</script></div>				
-	</div>
-	<div id="content_right">
-		<div id="adblock">
-		<script type="text/javascript"><!--
-			google_ad_client = "ca-pub-4339714761096906";
-			/* Pastebin Blue */
-			google_ad_slot = "5641140567";
-			google_ad_width = 728;
-			google_ad_height = 90;
-			//-->
-		</script>
-		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div>
-		
-		<div class="content_box"><b>Post a new Pastebin</b></div>
-		<form class="paste_form" name="paste_form" method="post" action="/post.php">
-			<input name="submit" value="submit" type="hidden" />
-			<input name="paste_parent_key" value="" type="hidden" />
-			<input name="paste_subdomain" value="" type="hidden" />
-			<textarea cols="5" rows="5" name="paste_code" onkeydown="return catchTab(this,event)" class="paste_textarea"></textarea>
-			<div class="form_info">To highlight particular lines, prefix each line with @h@</div>
-			<div class="form_frame">
-				<div class="form_left">
-					Syntax highlighting:
-				</div>
-				<div class="form_right">
-					<select class="post_select" name="paste_format"><option value="8">Bash</option><option value="9">C</option><option value="13">C++</option><option value="16">CSS</option><option value="25">HTML</option><option value="27">Java</option><option value="28">JavaScript</option><option value="30">Lua</option><option value="1">None</option><option value="40">Perl</option><option value="41">PHP</option><option value="42">Python</option><option value="67">Rails</option><option value="0">----------------------------</option><option value="73">ABAP</option><option value="2">ActionScript</option><option value="74">ActionScript 3</option><option value="3">Ada</option><option value="4">Apache Log</option><option value="5">AppleScript</option><option value="75">APT Sources</option><option value="6">ASM (NASM)</option><option value="7">ASP</option><option value="54">AutoIt</option><option value="76">Avisynth</option><option value="8">Bash</option><option value="77">Basic4GL</option><option value="78">BibTeX</option><option value="55">Blitz Basic</option><option value="56">BNF</option><option value="80">BOO</option><option value="79">BrainFuck</option><option value="9">C</option><option value="10">C for Macs</option><option value="82">C Intermediate Language</option><option value="14">C#</option><option value="13">C++</option><option value="11">CAD DCL</option><option value="12">CAD Lisp</option><option value="81">CFDG</option><option value="99">Clone C</option><option value="100">Clone C++</option><option value="83">CMake</option><option value="84">COBOL</option><option value="15">ColdFusion</option><option value="16">CSS</option><option value="17">D</option><option value="85">DCS</option><option value="18">Delphi</option><option value="19">Diff</option><option value="86">DIV</option><option value="20">DOS</option><option value="87">DOT</option><option value="21">Eiffel</option><option value="88">Email</option><option value="57">Erlang</option><option value="89">FO Language</option><option value="22">Fortran</option><option value="23">FreeBasic</option><option value="24">Game Maker</option><option value="58">Genero</option><option value="90">GetText</option><option value="59">Groovy</option><option value="60">Haskell</option><option value="93">HQ9 Plus</option><option value="25">HTML</option><option value="94">IDL</option><option value="26">INI file</option><option value="61">Inno Script</option><option value="95">INTERCAL</option><option value="96">IO</option><option value="27">Java</option><option value="97">Java 5</option><option value="28">JavaScript</option><option value="98">KiXtart</option><option value="62">Latex</option><option value="63">Linden Scripting</option><option value="29">Lisp</option><option value="101">Loco Basic</option><option value="102">LOL Code</option><option value="103">Lotus Formulas</option><option value="104">Lotus Script</option><option value="105">LScript</option><option value="30">Lua</option><option value="65">M68000 Assembler</option><option value="106">Make</option><option value="31">MatLab</option><option value="64">MatLab</option><option value="66">mIRC</option><option value="107">Modula 3</option><option value="32">MPASM</option><option value="108">MXML</option><option value="33">MySQL</option><option value="1" selected="selected">None</option><option value="34">NullSoft Installer</option><option value="109">Oberon 2</option><option value="35">Objective C</option><option value="110">OCalm Brief</option><option value="36">OCaml</option><option value="91">OpenGL Shading</option><option value="37">Openoffice BASIC</option><option value="111">Oracle 11</option><option value="38">Oracle 8</option><option value="39">Pascal</option><option value="141">PAWN</option><option value="112">Per</option><option value="40">Perl</option><option value="41">PHP</option><option value="113">PHP Brief</option><option value="114">Pic 16</option><option value="115">Pixel Bender</option><option value="68">PL/SQL</option><option value="116">POV-Ray</option><option value="117">Power Shell</option><option value="118">Progress</option><option value="119">Prolog</option><option value="120">Properties</option><option value="121">ProvideX</option><option value="42">Python</option><option value="43">QBasic</option><option value="67">Rails</option><option value="122">REBOL</option><option value="123">REG</option><option value="44">Robots</option><option value="45">Ruby</option><option value="92">Ruby Gnuplot</option><option value="124">SAS</option><option value="125">Scala</option><option value="46">Scheme</option><option value="126">Scilab</option><option value="127">SdlBasic</option><option value="69">Smalltalk</option><option value="47">Smarty</option><option value="48">SQL</option><option value="130">T-SQL</option><option value="49">TCL</option><option value="70">TCL</option><option value="128">Tera Term</option><option value="129">thinBasic</option><option value="131">TypoScript</option><option value="71">unrealScript</option><option value="51">VB.NET</option><option value="132">VeriLog</option><option value="133">VHDL</option><option value="134">VIM</option><option value="135">Visual Pro Log</option><option value="50">VisualBasic</option><option value="52">VisualFoxPro</option><option value="136">WhiteSpace</option><option value="137">WHOIS</option><option value="138">Win Batch</option><option value="53">XML</option><option value="139">Xorg Config</option><option value="140">XPP</option><option value="72">Z80 Assembler</option>
-					</select>
-				</div>
-			</div>
-			<div class="form_frame">
-				<div class="form_left">
-					Post expiration:
-				</div>
-				<div class="form_right">
-					<select class="post_select" name="paste_expire_date"><option value="N">Never</option><option value="10M">10 Minutes</option><option value="1H">1 Hour</option><option value="1D">1 Day</option><option value="1M">1 Month</option></select>
-				</div>
-			</div>
-			<div class="form_frame">
-				<div class="form_left">
-					Post exposure:
-				</div>
-				<div class="form_right">
-					<select class="post_select" name="paste_private"><option value="0">Public</option><option value="1">Private</option></select>
-				</div>
-			</div>						
-			<div class="form_frame">
-				<div class="form_left">
-					Name / Title:
-				</div>
-				<div class="form_right">
-					<input type="text" name="paste_name" size="20" value="" class="post_input" /> 
-				</div>
-			</div>
-			<div class="form_frame">
-				<div class="form_left">
-					Email:
-				</div>
-				<div class="form_right">
-					<input type="text" name="paste_email" size="20" value="" class="post_input" /> 
-				</div>
-			</div>
-			<input class="paste_submit" src="/i/dot.gif" alt="submit" type="image" value="submit" name="submit" />						
-		</form>	
-		<div class="clear_it"><!-- --></div>				</div>
-			</div>
-			<div id="footer-push"></div>
-		</div>
-		<div id="footer">
-			 <div id="footer_left">
-				&copy; 2010 - pastebin.com | <a href="/index">new post</a> | <a href="/api.php">API</a> | <a href="/tools">tools</a> | <a href="/archive/1">archive</a> | <a href="/help">help</a> | <a href="/links_emailer.php">links emailer</a> | <a href="http://www.twitter.com/pastebincom" target="_blank" rel="nofollow">twitter</a> | <a href="http://www.answerslog.com" target="_blank">Answerslog.com</a>
-			 </div>
-			 <div id="footer_right">
-
-				<span id="hide">0.00223</span>
-				<script type="text/javascript">
-				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				</script>
-				<script type="text/javascript">
-				try {
-				var pageTracker = _gat._getTracker("UA-58643-34");
-				pageTracker._trackPageview();
-				} catch(err) {}</script>
- 			 </div>
-		</div>
-<!--[if lte IE 6]>
-			</td>
-		</tr>
-        <tr>
-            <td>
-                <img src="/i/dot.gif" width="900" height="1" alt="" />
-            <td>
-        </tr>
-		</table>
-<![endif]-->
-	</body>
-</html>
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="GameSettings" referent="RBX0">
+		<Properties>
+			<float name="BubbleChatLifetime">30</float>
+			<int name="BubbleChatMaxBubbles">3</int>
+			<int name="ChatHistory">50</int>
+			<int name="ChatScrollLength">5</int>
+			<string name="Name">Game Options</string>
+			<bool name="SoftwareSound">false</bool>
+			<bool name="SoundEnabled">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="DebugSettings" referent="RBX1">
+		<Properties>
+			<bool name="AreSignalErrorsSuppressed">true</bool>
+			<bool name="EnforceInstanceCountLimit">false</bool>
+			<token name="ErrorReporting">0</token>
+			<int name="InstanceCountLimit">0</int>
+			<bool name="IsFmodProfilingEnabled">false</bool>
+			<bool name="IsProfilingEnabled">false</bool>
+			<bool name="IsScriptStackTracingEnabled">true</bool>
+			<int name="LuaRamLimit">0</int>
+			<string name="Name">Diagnostics</string>
+			<bool name="ReportExtendedMachineConfiguration">false</bool>
+			<bool name="ReportSoundWarnings">false</bool>
+			<token name="TickCountPreciseOverride">2</token>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="PhysicsSettings" referent="RBX2">
+		<Properties>
+			<bool name="AllowSleep">true</bool>
+			<bool name="AreAnchorsShown">false</bool>
+			<bool name="AreAwakePartsHighlighted">false</bool>
+			<bool name="AreModelCoordsShown">false</bool>
+			<bool name="AreOwnersShown">false</bool>
+			<bool name="ArePartCoordsShown">false</bool>
+			<bool name="AreRegionsShown">false</bool>
+			<bool name="AreUnalignedPartsShown">false</bool>
+			<bool name="AreWorldCoordsShown">false</bool>
+			<bool name="Is30FpsThrottleEnabled">true</bool>
+			<bool name="IsReceiveAgeShown">false</bool>
+			<string name="Name">Physics</string>
+			<bool name="ParallelPhysics">false</bool>
+			<token name="PhysicsEnviromentalThrottle">0</token>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Authoring" referent="RBX3">
+		<Properties>
+			<string name="Name">Authoring</string>
+			<bool name="ShowDepricatedObjects">false</bool>
+			<bool name="ShowPreliminaryObjects">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="NetworkSettings" referent="RBX4">
+		<Properties>
+			<double name="BandwidthExceededThreshold">1.1000000000000001</double>
+			<int name="DataMtuAdjust">-200</int>
+			<float name="DataSendRate">30</float>
+			<bool name="ExperimentalPhysicsEnabled">true</bool>
+			<string name="Name">Network</string>
+			<float name="NetworkOwnerRate">10</float>
+			<double name="NextActionMultiplier">1.5</double>
+			<int name="PhysicsMtuAdjust">-80</int>
+			<token name="PhysicsReceive">1</token>
+			<token name="PhysicsSend">0</token>
+			<float name="PhysicsSendRate">20</float>
+			<int name="PreferredClientPort">0</int>
+			<bool name="PrintInstances">false</bool>
+			<bool name="PrintPhysicsErrors">false</bool>
+			<bool name="PrintProperties">false</bool>
+			<double name="ReceiveRate">60</double>
+			<bool name="ReplicatorDiagnostics">true</bool>
+			<string name="ReportStatURL"></string>
+			<bool name="ServerLocalScripts">false</bool>
+			<int name="WaitingForCharacterLogRate">0</int>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="TaskScheduler" referent="RBX5">
+		<Properties>
+			<bool name="AreArbitersThrottled">false</bool>
+			<token name="Concurrency">2</token>
+			<string name="Name">Task Scheduler</string>
+			<token name="PriorityMethod">1</token>
+			<token name="SleepAdjustMethod">2</token>
+			<token name="ThreadPoolConfig">0</token>
+			<double name="ThrottledJobSleepTime">0.01</double>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="RenderSettings" referent="RBX6">
+		<Properties>
+			<token name="AASamples">1</token>
+			<token name="AluminumQuality">0</token>
+			<token name="Antialiasing">2</token>
+			<float name="BatchSize">20</float>
+			<token name="Bevels">0</token>
+			<token name="CompoundMaterialQuality">0</token>
+			<token name="CorrodedMetalQuality">0</token>
+			<int name="DebugCullBlockCount">-1</int>
+			<bool name="DebugDisableDebriService">false</bool>
+			<bool name="DebugFRMCullHumanoids">false</bool>
+			<bool name="DebugLogFRMLogVariables">false</bool>
+			<token name="DiamondPlateQuality">0</token>
+			<bool name="EagerBulkExecution">false</bool>
+			<token name="FrameRateManager">0</token>
+			<Vector2int16 name="FullscreenSizePreference">
+				<X>0</X>
+				<Y>0</Y>
+			</Vector2int16>
+			<token name="GrassQuality">0</token>
+			<token name="IceQuality">0</token>
+			<bool name="IsAggregationShown">false</bool>
+			<bool name="IsSynchronizedWithPhysics">false</bool>
+			<int name="MinCullDistance">50</int>
+			<string name="Name">Rendering</string>
+			<token name="PlasticQuality">0</token>
+			<token name="Shadow">0</token>
+			<bool name="ShowBoundingBoxes">false</bool>
+			<token name="SlateQuality">0</token>
+			<bool name="TextureCompositingEnabled">true</bool>
+			<token name="TrussDetail">0</token>
+			<Vector2int16 name="WindowSizePreference">
+				<X>0</X>
+				<Y>0</Y>
+			</Vector2int16>
+			<token name="WoodQuality">0</token>
+			<bool name="archivable">true</bool>
+			<token name="graphicsMode">4</token>
+			<string name="profileName"></string>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBX7">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>
