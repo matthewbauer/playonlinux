@@ -8,51 +8,79 @@
 = Hacking Roblox =
 ==================
 
-This documents Roblox URLs and Executable hacking.
+This guide is not finished. If you have any suggestions or changes you can send them to me: mjbauer95+roblox-api@gmail.om
 
 URLs:
+	http://www.roblox.com/Game/PlaceLauncher.asmx
+		The header must define Content-Type to be text/xml; charset=utf-8
+		You can use the POST command to send XML data like this:
+			<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><RequestGame xmlns="http://roblox.com/"><placeId jobId="$jobId">$placeId</placeId></RequestGame></soap:Body></soap:Envelope>
 
-http://www.roblox.com/Game/PlaceLauncher.asmx
+		List of xml elements in roblox namespace: 
+			POST:
+				placeId
 
-	The header must define Content-Type to be text/xml; charset=utf-8
-	You can use the POST command to send XML data like this:
-		<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><RequestGame xmlns="http://roblox.com/"><placeId jobId="$jobId">$placeId</placeId></RequestGame></soap:Body></soap:Envelope>
+			GET:
+				joinScriptUrl
+					may use like: Roblox.exe -play joinScriptUrl
+				jobId
+					always http://www.roblox.com/Login/Negotiate.ashx
+				status
+					Waiting or Joining
+				authenticationUrl
+				authenticationTicket
 
-	List of xml elements in roblox namespace: 
-		POST:
-			placeId
+		For example:
+			$ curl -s -b ~/.PlayOnLinux/wineprefix/Roblox/cookies -H 'Content-Type: text/xml; charset=utf-8' -d '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><RequestGame xmlns="http://roblox.com/"><placeId jobId="46e84963-9939-48b4-815a-ceee2fc3c534">5418826</placeId></RequestGame></soap:Body></soap:Envelope>' 'http://www.roblox.com/Game/PlaceLauncher.asmx'
 
-		GET:
-			joinScriptUrl
-				may use like: Roblox.exe -play joinScriptUrl
-			jobId
-				always http://www.roblox.com/Login/Negotiate.ashx
-			status
-				Waiting or Joining
-			authenticationUrl
-			authenticationTicket
+	https://www.roblox.com/login/dologin.aspx
+		The login page can be used as a simple POST.
+		Just send username=builderman&password=password as the data in the request.
+		Remember to save the cookies
 
-	For example:
-		$ curl -s -b ~/.PlayOnLinux/wineprefix/Roblox/cookies -H 'Content-Type: text/xml; charset=utf-8' -d '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><RequestGame xmlns="http://roblox.com/"><placeId jobId="46e84963-9939-48b4-815a-ceee2fc3c534">5418826</placeId></RequestGame></soap:Body></soap:Envelope>' 'http://www.roblox.com/Game/PlaceLauncher.asmx'
+		For example:
+			$ curl -s -c /tmp/roblox -d username="$1" -d password="$2" "https://www.roblox.com/login/dologin.aspx"
 
-https://www.roblox.com/login/dologin.aspx
-	The login page can be used as a simple POST.
-	Just send username=builderman&password=password as the data in the request.
-	Remember to save the cookies
+	* Any more URLs of interest? Email me: mjbauer95+roblox-api-url@gmail.com
 
-	For example:
-		$ curl -s -c /tmp/roblox -d username="$1" -d password="$2" "https://www.roblox.com/login/dologin.aspx"
+XML Files:
+	These XML settings files that go in C:\users\$user\Local Settings\Application Data\Roblox\
+
+	GlobalSettings_4.xml
+		Usage:
+			changes the main game's functionality (like in the -play option)
+
+		Example:
+			See http://github.com/paradoq/playonlinux/blob/master/roblox/GlobalSettings_4.xml
+
+	IDESettings2.xml
+		Usage:
+			changes the IDE's settings; 
+
+	* I have no idea what the numbers stand for; possibly the version of the file.
+	  If you know what the numbers stand for email me: mjbauer95+roblox-api-xml-files@gmail.com
 
 Executables:
+	They are located in C:\Program Files\RobloxVersions\version-$version\
 
-List of option for Roblox.exe and RobloxApp.exe
 	Roblox.exe
-		-q
-		-play joinScriptUrl
-		-uninstall
-		-alluser
-		-ide
-		-browser
+		Options:
+			-q
+			-play joinScriptUrl
+			-uninstall
+			-alluser
+			-ide
+			-browser
+
+		Default:
+			opens up a browser
 
 	RobloxApp.exe
-		-browser
+		Options:
+			-browser
+
+		Default:
+			opens up the IDE
+
+	* Most options are simply guessed and should not be looked at as a complete list of options.
+	  If you've found a new options for Roblox email me: mjbauer95+roblox-api-executables@gmail.com

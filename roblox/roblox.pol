@@ -34,7 +34,7 @@ Set_Managed "On"
 #Set_GLSL "On"
 Set_DXGrab "On"
 
-POL_SetupWindow_pulsebar "Installing applications with winetricks" "Installing"
+POL_SetupWindow_pulsebar "Installing base applications with winetricks" "Installing"
 
 cd "$REPERTOIRE/ressources/"
 #downloading winetricks
