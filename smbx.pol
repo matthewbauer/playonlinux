@@ -1,0 +1,56 @@
+#!/bin/bash
+# Date : (2010-04-24 20-47)
+# Last revision : (2010-04-24 20-47)
+# Wine version used : 1.1.43
+# Distribution used to test : Arch Linux
+# Author : Matthew Bauer
+# License : GPLv3
+# Depend : 
+
+[ "$PLAYONLINUX" = "" ] && exit 0
+
+source "$PLAYONLINUX/lib/sources" 
+
+scriptauthor="Matthew Bauer"
+
+appname="Super Mario Brothers X"
+shortname="smbx"
+basesite="http://www.supermariobrothers.org"
+appversion="1.2"
+appcreator="Andrew Spinks 'Redigit' and others"
+zipname="smbx12.zip"
+#download="$basesite/$shortname/$zipname"
+download="http://$shortname.dl.iad04s01-in-f99.bikcmp.com/$zipname"
+
+POL_SetupWindow_Init
+
+POL_SetupWindow_presentation "$appname" "$appcreator" "$basesite" "$scriptauthor" "$appname"
+
+select_prefix "$REPERTOIRE/wineprefix/$shortname/"
+POL_SetupWindow_prefixcreate
+
+POL_SetupWindow_pulsebar "Installing base applications with winetricks" "Installing"
+
+POL_SetupWindow_pulse "1"
+
+cd "$REPERTOIRE/ressources/"
+#downloading winetricks
+if [ ! -e "winetricks" ]; then
+	wget http://winezeug.googlecode.com/svn/trunk/winetricks --output-document=winetricks
+fi
+
+POL_SetupWindow_pulse "33"
+bash winetricks -q vb6run
+POL_SetupWindow_pulse "66"
+bash winetricks -q quartz
+POL_SetupWindow_pulse "100"
+
+POL_SetupWindow_download "Downloading $appname" "$shortname" "$download"
+
+mkdir -p "$REPERTOIRE/drive_c/Program Files/$appname"
+unzip "$REPERTOIRE/ressources/$zipname" -d "drive_c/Program Files/$appname"
+rm "$REPERTOIRE/ressources/$zipname"
+
+POL_SetupWindow_make_shortcut "$shortname" "Program Files/$appname" "$shortname.exe" "" "$appname" "" ""
+
+POL_SetupWindow_Close
